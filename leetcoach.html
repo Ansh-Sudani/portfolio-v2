@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LeetCoach · Ansh Sudani</title>
+  <meta name="description" content="LeetCoach: an AI interview coach that teaches you to solve coding problems with escalating hints." />
+  <meta property="og:title" content="LeetCoach · Ansh Sudani" />
+  <meta property="og:image" content="https://anshsudani.vercel.app/assets/og-image.png" />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+<nav class="nav">
+  <div class="wrap">
+    <a class="brand" href="../index.html"><span class="tile"><img src="../assets/logo.png" alt="" /></span>Ansh Sudani</a>
+    <a class="btn btn-solid btn-sm" href="../assets/Ansh_Sudani_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+  </div>
+</nav>
+<main class="doc">
+  <div class="wrap">
+    <a class="back" href="../index.html#projects">← All projects</a>
+
+    <span class="chip live" style="display:inline-block;margin-top:24px">Live preview</span>
+    <h1>LeetCoach</h1>
+    <p class="sub">An AI coach for coding interviews. Get stuck, get a nudge, not the answer.</p>
+    <div class="meta"><ul class="tags" style="padding:0"><li>Python</li><li>Flask</li><li>SQLite</li><li>REST API</li><li>Anthropic API</li></ul></div>
+    <div class="cta"><a class="btn btn-solid" href="https://leetcoach-preview-production.up.railway.app/" target="_blank" rel="noopener">Try the preview</a></div>
+    <div class="notice"><span class="dot" style="margin-top:8px;flex:none"></span><span><b>Still being built.</b> The preview is live, and it changes often. This page is the working doc.</span></div>
+
+    <section>
+      <h2>The problem</h2>
+      <p>When you get stuck on a LeetCode problem, you have two options: stay stuck, or read the full solution. Neither teaches you much. What's missing is the middle ground a good tutor gives you: just enough of a push to keep thinking.</p>
+    </section>
+
+    <section>
+      <h2>How it works</h2>
+      <p>Every problem has a four-level hint ladder. You only climb as far as you need.</p>
+      <ol class="steps" style="margin-top:16px">
+        <li><b>Guiding question.</b> A question that points you toward the right way to think about it.</li>
+        <li><b>Named pattern.</b> The technique to reach for, like two pointers or a hash map.</li>
+        <li><b>Applied reasoning.</b> How that pattern fits this specific problem.</li>
+        <li><b>Pseudocode.</b> The last resort, the structure without the finished code.</li>
+      </ol>
+      <p style="margin-top:16px">If the hints still aren't enough, a chat fallback lets you ask follow-up questions. Progress is tracked per problem, including how many hints you needed, so you can see what's sticking.</p>
+    </section>
+
+    <section>
+      <h2>Under the hood</h2>
+      <ul>
+        <li>Flask backend with a REST API layer for problems, hints, and progress.</li>
+        <li>SQLite for user progress and hint usage.</li>
+        <li>Hint generation through the Anthropic API, with prompts designed per hint level.</li>
+        <li>Built with AI-assisted development (Claude Code), deployed on Railway.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Business model</h2>
+      <ul>
+        <li><b>Free:</b> the first 10 problems with unlimited hints, then 4 free hints a day.</li>
+        <li><b>Pro:</b> unlimited hints for $10/month or $100/year.</li>
+        <li><b>Career centres:</b> group licenses for universities.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>What's next</h2>
+      <ul class="roadmap">
+        <li>User testing with Queen's Computing students.</li>
+        <li>Accounts and the free-tier hint limits.</li>
+        <li>AI voice mock interviews modelled on real companies, with feedback afterward.</li>
+      </ul>
+    </section>
+  </div>
+</main>
+<footer><div class="wrap"><span>© 2026 Ansh Sudani</span><span>Working doc · updated as I build</span></div></footer>
+</body>
+</html>

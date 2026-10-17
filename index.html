@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ansh Sudani</title>
+  <meta name="description" content="Ansh Sudani: fourth-year Computing student at Queen's University building AI tools like LeetCoach. Open to Summer 2027 internships." />
+  <meta property="og:title" content="Ansh Sudani" />
+  <meta property="og:description" content="Still building, now shipping. LeetCoach & more." />
+  <meta property="og:image" content="https://anshsudani.vercel.app/assets/og-image.png" />
+  <meta property="og:url" content="https://anshsudani.vercel.app/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top"><span class="tile"><img src="assets/logo.png" alt="" /></span>Ansh Sudani</a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navLinks">Menu</button>
+    <ul class="links" id="navLinks">
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a class="btn btn-solid btn-sm" href="assets/Ansh_Sudani_Resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="status"><span class="dot"></span>Open to Summer 2027 internships</span>
+      <h1>Hi, I'm Ansh.</h1>
+      <p class="line">I build things I wish existed.</p>
+      <p class="intro">Fourth-year Computing student at Queen's University, specializing in Software Design. Right now I'm building <strong>LeetCoach</strong>, an AI coach that teaches you to solve coding problems instead of handing you the answer.</p>
+      <div class="cta">
+        <a class="btn btn-solid" href="assets/Ansh_Sudani_Resume.pdf" target="_blank" rel="noopener">View resume</a>
+        <a class="btn btn-ghost" href="#contact"><span class="dot"></span>Get in touch</a>
+      </div>
+    </div>
+    <div class="mark-wrap">
+      <div class="mark tile"><img src="assets/logo.png" alt="Ansh Sudani logo" /></div>
+      <span class="coords">KINGSTON, ON · 44.23° N</span>
+    </div>
+  </div>
+</header>
+
+<div class="now">
+  <div class="wrap">
+    <div class="now-card">
+      <span class="label">Now</span>
+      <span class="item"><b>Shipping</b> LeetCoach</span>
+      <span class="item"><b>Building</b> J.A.R.V.I.S.</span>
+      <span class="item"><b>Starting</b> BayStreetQuant</span>
+      <span class="item"><b>Studying</b> AWS Cloud Practitioner</span>
+    </div>
+  </div>
+</div>
+
+<section id="projects">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">Projects</span>
+      <h2>What I'm building</h2>
+      <p class="lede">Everything here is active. Each project has a working doc with what it is, how it works, and what's next.</p>
+    </div>
+
+    <div class="projects">
+      <article class="card">
+        <div class="top"><span class="idx">01</span><span class="chip live">Live preview</span></div>
+        <h3>LeetCoach</h3>
+        <p>An AI interview coach. Get stuck, get a nudge, not the answer. LeetCode is the exam; LeetCoach is where you study.</p>
+        <ol class="ladder" aria-label="Hint levels">
+          <li><span>1</span>Guiding question</li>
+          <li><span>2</span>Named pattern</li>
+          <li><span>3</span>Applied reasoning</li>
+          <li><span>4</span>Pseudocode</li>
+        </ol>
+        <ul class="tags"><li>Python</li><li>Flask</li><li>SQLite</li><li>Anthropic API</li></ul>
+        <div class="actions">
+          <a class="btn btn-solid btn-sm" href="https://leetcoach-preview-production.up.railway.app/" target="_blank" rel="noopener">Try it</a>
+          <a class="btn btn-ghost btn-sm" href="projects/leetcoach.html">Read the doc</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="top"><span class="idx">02</span><span class="chip wip">In progress</span></div>
+        <h3>J.A.R.V.I.S.</h3>
+        <p>A voice-activated AI assistant. Talk to it, and it listens, thinks, and talks back while running tasks in the background.</p>
+        <ul class="tags"><li>Python</li><li>WebSockets</li><li>Whisper</li><li>ElevenLabs</li><li>asyncio</li></ul>
+        <div class="actions">
+          <a class="btn btn-ghost btn-sm" href="projects/jarvis.html">Read the doc</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="top"><span class="idx">03</span><span class="chip early">Early stage</span></div>
+        <h3>BayStreetQuant</h3>
+        <p>A quant project in its early days. The doc covers where it's headed and what's being built first.</p>
+        <ul class="tags"><li>Python</li><li>Market data</li></ul>
+        <div class="actions">
+          <a class="btn btn-ghost btn-sm" href="projects/baystreetquant.html">Read the doc</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">Experience</span>
+      <h2>Where I've worked</h2>
+    </div>
+    <div class="timeline">
+      <article class="role">
+        <span class="when">Oct 2026 – Present</span>
+        <div>
+          <h3>Industry Development Coordinator</h3>
+          <p class="org">Queen's Computing Students' Association (COMPSA) · Kingston, ON</p>
+          <ul>
+            <li>Plan career events, workshops, and networking nights connecting Computing students with industry.</li>
+            <li>Reach out to alumni, companies, and student organizations to bring in speakers and partners.</li>
+          </ul>
+        </div>
+      </article>
+      <article class="role">
+        <span class="when">Sep 2025 – Dec 2025</span>
+        <div>
+          <h3>Teaching Assistant, APSC 141</h3>
+          <p class="org">Smith Engineering, Queen's University · Kingston, ON</p>
+          <ul>
+            <li>Supported Introduction to Computer Programming for 750+ first-year engineering students.</li>
+            <li>Led lab sessions on core C concepts: loops, conditionals, functions, and data structures.</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">About</span>
+      <h2>The short version</h2>
+    </div>
+    <div class="split">
+      <div class="panel">
+        <h3>A bit about me</h3>
+        <p>I'm from Markham, Ontario, and I'm finishing my Bachelor of Computing at Queen's. I like turning small frustrations into tools. LeetCoach started because every prep site either gave me the answer or left me stuck.</p>
+        <p>I didn't have a straight path into computing. I failed my first programming course, came back, and earned an A+ on the retake. That's still how I work: try, learn, ship, repeat.</p>
+      </div>
+      <div class="panel">
+        <h3>Details</h3>
+        <dl class="kv">
+          <dt>School</dt><dd>Queen's University, B.Comp (Honours), Software Design · Dec 2027</dd>
+          <dt>Languages</dt><dd>Python, Java, C, SQL, Bash, HTML/CSS</dd>
+          <dt>Tools</dt><dd>Flask, Anthropic API, Claude Code, Git, Linux, AWS</dd>
+          <dt>Into</dt><dd>AI tools, startups, building in public</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="contact-card">
+      <div>
+        <span class="eyebrow" style="color:inherit;opacity:.6">Contact</span>
+        <h2>Let's talk.</h2>
+        <p>Hiring for Summer 2027, building something interesting, or just want to chat? My inbox is open.</p>
+      </div>
+      <div class="contact-list">
+        <button type="button" id="copyEmail" data-email="anshsudani05@gmail.com"><span class="v">anshsudani05@gmail.com</span><span class="k" id="copyLabel">COPY</span></button>
+        <a href="https://linkedin.com/in/anshsudani" target="_blank" rel="noopener"><span class="v">LinkedIn</span><span class="k">/in/anshsudani ↗</span></a>
+        <a href="https://github.com/Ansh-Sudani" target="_blank" rel="noopener"><span class="v">GitHub</span><span class="k">Ansh-Sudani ↗</span></a>
+        <a href="assets/Ansh_Sudani_Resume.pdf" target="_blank" rel="noopener"><span class="v">Resume</span><span class="k">PDF ↗</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="year">2026</span> Ansh Sudani</span>
+    <span>v1 shipped · v2 loading</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
