@@ -160,6 +160,13 @@ h2 { font-family: var(--display); font-size: clamp(34px, 4.5vw, 48px); letter-sp
   padding: 24px 26px; display: grid; grid-template-columns: 180px 1fr; gap: 20px;
 }
 .role .when { font-family: var(--mono); font-size: 13px; color: var(--muted); padding-top: 4px; }
+.role-side { display: flex; flex-direction: column; align-items: flex-start; gap: 16px; }
+.org-logo {
+  width: 56px; height: 56px; border-radius: 14px; object-fit: cover; display: block;
+  border: 1px solid var(--line); box-shadow: 0 2px 10px rgba(0,0,0,.08);
+  transition: transform .25s ease;
+}
+.role:hover .org-logo { transform: translateY(-2px) rotate(-2deg); }
 .role h3 { font-family: var(--display); font-size: 22px; letter-spacing: -.02em; }
 .role .org { color: var(--ink-2); font-size: 15px; margin-top: 2px; }
 .role ul { margin-top: 12px; padding-left: 18px; color: var(--muted); font-size: 15.5px; display: grid; gap: 6px; }
@@ -235,7 +242,14 @@ footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; g
   .wrap { padding-inline: 16px; }
   .hero { padding-block: 48px 40px; }
   section { padding-block: 48px; }
-  .role { grid-template-columns: 1fr; gap: 6px; }
+  .role { grid-template-columns: 1fr; gap: 0; padding: 20px; }
+  .role > div:not(.role-side) { display: contents; }
+  .role h3 { order: 0; }
+  .role-side { order: 1; flex-direction: row; align-items: center; gap: 12px; margin: 12px 0 10px; }
+  .role .org { order: 2; margin-top: 0; }
+  .role ul { order: 3; }
+  .role-side .org-logo { order: -1; width: 44px; height: 44px; border-radius: 11px; }
+  .role .when { padding-top: 0; }
   .contact-card { padding: 28px 22px; }
   .kv { grid-template-columns: 1fr; gap: 2px 0; }
   .kv dd { margin-bottom: 10px; }
