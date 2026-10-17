@@ -23,7 +23,7 @@
   --max: 1080px;
 }
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --bg: #0E0E0D; --grid: #1C1C1A; --surface: #171716; --ink: #F2F2EF; --ink-2: #CFCFCA;
     --muted: #8F8F89; --line: #2A2A27; --accent: #F2F2EF;
     --ok: #6FD39A; --ok-bg: #17301F; --warn: #F2C25B; --warn-bg: #33290F; --idle: #B4B8BF; --idle-bg: #23252A;
@@ -31,6 +31,14 @@
     color-scheme: dark;
   }
 }
+:root[data-theme="dark"] {
+    --bg: #0E0E0D; --grid: #1C1C1A; --surface: #171716; --ink: #F2F2EF; --ink-2: #CFCFCA;
+    --muted: #8F8F89; --line: #2A2A27; --accent: #F2F2EF;
+    --ok: #6FD39A; --ok-bg: #17301F; --warn: #F2C25B; --warn-bg: #33290F; --idle: #B4B8BF; --idle-bg: #23252A;
+    --shadow: 0 1px 0 var(--line), 0 24px 48px -28px rgba(0,0,0,.7);
+    color-scheme: dark;
+  }
+
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; scroll-padding-top: 88px; }
@@ -240,3 +248,19 @@ footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; g
 /* nav resume button keeps button colors */
 .links a.btn-solid { color: var(--bg); background: var(--ink); padding: 8px 16px; }
 .links a.btn-solid:hover { color: var(--bg); background: var(--ink); }
+
+/* theme toggle */
+.theme-btn { width: 38px; height: 38px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); display: grid; place-items: center; cursor: pointer; flex: none; }
+.theme-btn:hover { border-color: var(--ink); }
+.theme-btn svg { width: 18px; height: 18px; }
+.theme-btn .sun { display: none; }
+:root[data-theme="dark"] .theme-btn .sun { display: block; }
+:root[data-theme="dark"] .theme-btn .moon { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .theme-btn .sun { display: block; }
+  :root:not([data-theme="light"]) .theme-btn .moon { display: none; }
+}
+.nav-right { display: flex; align-items: center; gap: 8px; }
+.nav-right .links { order: 1; }
+.nav-right .theme-btn { order: 2; }
+.nav-right .menu-btn { order: 3; }

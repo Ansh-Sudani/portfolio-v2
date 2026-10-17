@@ -33,3 +33,16 @@ if (copyBtn) {
 // Footer year
 const y = document.getElementById('year');
 if (y) y.textContent = new Date().getFullYear();
+
+// Theme toggle (remembers choice)
+(function(){
+  const root=document.documentElement;
+  const btn=document.getElementById('themeBtn');
+  if(!btn) return;
+  const isDark=()=> root.dataset.theme ? root.dataset.theme==='dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+  btn.addEventListener('click',()=>{
+    const next=isDark()?'light':'dark';
+    root.dataset.theme=next;
+    try{localStorage.setItem('theme',next);}catch(e){}
+  });
+})();
