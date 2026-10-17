@@ -242,8 +242,12 @@ footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; g
   .wrap { padding-inline: 16px; }
   .hero { padding-block: 48px 40px; }
   section { padding-block: 48px; }
-  .role { grid-template-columns: 1fr; gap: 14px; padding: 20px; }
-  .role-side { flex-direction: row; align-items: center; gap: 12px; }
+  .role { grid-template-columns: 1fr; gap: 0; padding: 20px; }
+  .role > div:not(.role-side) { display: contents; }
+  .role h3 { order: 0; }
+  .role-side { order: 1; flex-direction: row; align-items: center; gap: 12px; margin: 12px 0 10px; }
+  .role .org { order: 2; margin-top: 0; }
+  .role ul { order: 3; }
   .role-side .org-logo { order: -1; width: 44px; height: 44px; border-radius: 11px; }
   .role .when { padding-top: 0; }
   .contact-card { padding: 28px 22px; }
