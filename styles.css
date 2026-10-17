@@ -264,3 +264,5 @@ footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; g
 .nav-right .links { order: 1; }
 .nav-right .theme-btn { order: 2; }
 .nav-right .menu-btn { order: 3; }
+
+.btn-ghost .dot { background: var(--ok); }
