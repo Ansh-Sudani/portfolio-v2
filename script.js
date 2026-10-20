@@ -14,19 +14,22 @@ if (menuBtn && links) {
   }));
 }
 
-// Copy email
+// Copy email: tap the row, the address briefly reads "Copied!"
 const copyBtn = document.getElementById('copyEmail');
-const copyLabel = document.getElementById('copyLabel');
-if (copyBtn) {
+const emailText = document.getElementById('emailText');
+if (copyBtn && emailText) {
+  let t;
   copyBtn.addEventListener('click', async () => {
     const email = copyBtn.dataset.email;
     try {
       await navigator.clipboard.writeText(email);
-      copyLabel.textContent = 'COPIED';
+      emailText.textContent = 'Copied!';
+      copyBtn.classList.add('copied');
+      clearTimeout(t);
+      t = setTimeout(() => { emailText.textContent = email; copyBtn.classList.remove('copied'); }, 1000);
     } catch {
       window.location.href = 'mailto:' + email;
     }
-    setTimeout(() => (copyLabel.textContent = 'COPY'), 1800);
   });
 }
 
