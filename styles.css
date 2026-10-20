@@ -149,10 +149,10 @@ h2 { font-family: var(--display); font-size: clamp(34px, 4.5vw, 48px); letter-sp
 .ladder li { display: flex; align-items: center; gap: 10px; }
 .ladder li span { width: 20px; height: 20px; border-radius: 6px; display: grid; place-items: center; font-size: 11px; border: 1px solid var(--line); color: var(--muted); flex: none; }
 .ladder li:nth-child(n) span { border-color: transparent; }
-.ladder li:nth-child(1) span { background: var(--ink); color: var(--bg); }
-.ladder li:nth-child(2) span { background: color-mix(in srgb, var(--ink) 68%, var(--surface)); color: var(--bg); }
-.ladder li:nth-child(3) span { background: color-mix(in srgb, var(--ink) 40%, var(--surface)); color: var(--ink); }
-.ladder li:nth-child(4) span { background: color-mix(in srgb, var(--ink) 16%, var(--surface)); color: var(--ink); }
+.ladder li:nth-child(1) span { background: #E07F00; color: #fff; }
+.ladder li:nth-child(2) span { background: #F39200; color: #fff; }
+.ladder li:nth-child(3) span { background: #F8B04A; color: #3a2600; }
+.ladder li:nth-child(4) span { background: #FCD9A0; color: #3a2600; }
 .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; padding-top: 6px; }
 .tags li { list-style: none; font-family: var(--mono); font-size: 12px; padding: 4px 9px; border: 1px solid var(--line); border-radius: 8px; color: var(--ink-2); }
 .card .actions { display: flex; flex-wrap: wrap; gap: 8px; }
