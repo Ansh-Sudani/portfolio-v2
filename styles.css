@@ -280,3 +280,10 @@ footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; g
 .nav-right .menu-btn { order: 3; }
 
 .btn-ghost .dot { background: var(--ok); }
+
+/* ---------- touch polish ---------- */
+a, button, summary { -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
+@media (max-width: 680px) {
+  .theme-btn { width: 42px; height: 42px; }
+  .back { display: inline-block; padding: 12px 0; }
+}
